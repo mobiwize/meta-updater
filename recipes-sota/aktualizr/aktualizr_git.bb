@@ -8,12 +8,13 @@ DEPENDS = "boost curl openssl jansson libsodium ostree"
 RDEPENDS_${PN} = "lshw"
 
 SRC_URI = " \
-  git://github.com/advancedtelematic/aktualizr \
+  git://github.com/advancedtelematic/aktualizr;branch=${BRANCH} \
   file://aktualizr-manual-provision.service \
   file://aktualizr-autoprovision.service \
   file://sota_autoprov.toml \
   "
 SRCREV = "c24f1fc9b600113cf9f2d3d7215e406cbbb70ac4"
+BRANCH ?= "master"
 PV = "1.0+git${SRCPV}"
 
 S = "${WORKDIR}/git"
