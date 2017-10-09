@@ -2,3 +2,4 @@
 #python __anonymous() {
 #	bb.warn("SOTA functionality is not yet supported for your machine")
 #}
+IMAGE_FSTYPES_remove = "wic"
