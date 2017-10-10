@@ -183,7 +183,8 @@ IMAGE_CMD_ostree () {
 	       --tree=dir=${OSTREE_ROOTFS} \
 	       --skip-if-unchanged \
 	       --branch=${OSTREE_BRANCHNAME} \
-	       --subject="Commit-id: ${IMAGE_NAME}"
+	       --subject="Commit-id: ${IMAGE_NAME}" \
+	       --no-xattrs
 
 	rm -rf ${OSTREE_ROOTFS}
 }
