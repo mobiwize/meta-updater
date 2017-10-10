@@ -8,9 +8,9 @@ INHERIT_remove_class-native = "systemd"
 
 SRC_URI = "gitsm://github.com/ostreedev/ostree.git;branch=master"
 
-SRCREV="3b09620c2738bce4ed45e099cf2e4c5df7671d39"
+SRCREV="fc33ae018dccbcab633b69474db0811987355212"
 
-PV = "2017.3-31-g3b09620c"
+PV = "2017.12-fc33ae"
 
 S = "${WORKDIR}/git"
 
@@ -87,3 +87,4 @@ FILES_${PN}-switchroot = "${libdir}/ostree/ostree-prepare-root"
 RDEPENDS_${PN}-switchroot = ""
 DEPENDS_remove_class-native = "systemd-native"
 
+inherit bash-completion
