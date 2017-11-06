@@ -8,9 +8,9 @@ INHERIT_remove_class-native = "systemd"
 
 SRC_URI = "gitsm://github.com/ostreedev/ostree.git;branch=master"
 
-SRCREV="fc33ae018dccbcab633b69474db0811987355212"
+SRCREV="ae61321046ad7f4148a5884c8c6c8b2594ff840e"
 
-PV = "2017.12-fc33ae"
+PV = "2017.13"
 
 S = "${WORKDIR}/git"
 
